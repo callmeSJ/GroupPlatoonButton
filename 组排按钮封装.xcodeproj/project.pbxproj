@@ -15,6 +15,7 @@
 		3311DB941CF5ED5200170591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3311DB921CF5ED5200170591 /* LaunchScreen.storyboard */; };
 		3311DB9F1CF5ED5200170591 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311DB9E1CF5ED5200170591 /* ______Tests.m */; };
 		3311DBAA1CF5ED5200170591 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311DBA91CF5ED5200170591 /* ______UITests.m */; };
+		338A19D41CF6C75400FFA87A /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 338A19D31CF6C75400FFA87A /* View.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		3311DBA51CF5ED5200170591 /* 组排按钮封装UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "组排按钮封装UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3311DBA91CF5ED5200170591 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		3311DBAB1CF5ED5200170591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338A19D21CF6C75400FFA87A /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		338A19D31CF6C75400FFA87A /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		339E2CA61CF8097B00C35C6A /* ViewPassValueDalegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPassValueDalegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075A18891CF8824E001EC81B /* Ctrl */ = {
+			isa = PBXGroup;
+			children = (
+				3311DB8A1CF5ED5200170591 /* ViewController.h */,
+				3311DB8B1CF5ED5200170591 /* ViewController.m */,
+				075A188B1CF88264001EC81B /* View */,
+				075A188A1CF8825C001EC81B /* Model */,
+			);
+			name = Ctrl;
+			sourceTree = "<group>";
+		};
+		075A188A1CF8825C001EC81B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		075A188B1CF88264001EC81B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				338A19D21CF6C75400FFA87A /* View.h */,
+				338A19D31CF6C75400FFA87A /* View.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		3311DB781CF5ED5200170591 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +132,10 @@
 		3311DB831CF5ED5200170591 /* 组排按钮封装 */ = {
 			isa = PBXGroup;
 			children = (
+				075A18891CF8824E001EC81B /* Ctrl */,
 				3311DB871CF5ED5200170591 /* AppDelegate.h */,
 				3311DB881CF5ED5200170591 /* AppDelegate.m */,
-				3311DB8A1CF5ED5200170591 /* ViewController.h */,
-				3311DB8B1CF5ED5200170591 /* ViewController.m */,
+				339E2CA61CF8097B00C35C6A /* ViewPassValueDalegate.h */,
 				3311DB8D1CF5ED5200170591 /* Main.storyboard */,
 				3311DB901CF5ED5200170591 /* Assets.xcassets */,
 				3311DB921CF5ED5200170591 /* LaunchScreen.storyboard */,
@@ -270,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338A19D41CF6C75400FFA87A /* View.m in Sources */,
 				3311DB8C1CF5ED5200170591 /* ViewController.m in Sources */,
 				3311DB891CF5ED5200170591 /* AppDelegate.m in Sources */,
 				3311DB861CF5ED5200170591 /* main.m in Sources */,
@@ -496,6 +528,7 @@
 				3311DBB01CF5ED5200170591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3311DBB11CF5ED5200170591 /* Build configuration list for PBXNativeTarget "组排按钮封装Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +537,7 @@
 				3311DBB31CF5ED5200170591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3311DBB41CF5ED5200170591 /* Build configuration list for PBXNativeTarget "组排按钮封装UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +546,7 @@
 				3311DBB61CF5ED5200170591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

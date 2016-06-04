@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "View.h"
+#import "ViewPassValueDalegate.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ViewPassValueDalegate>
+
+
+
 
 
 @end
